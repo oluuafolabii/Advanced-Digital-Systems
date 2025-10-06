@@ -1,0 +1,89 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 24 17:50:12 2025
+| Host         : DarthViktor running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file space_invaders_control_sets_placed.rpt
+| Design       : space_invaders
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    59 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              23 |           13 |
+| Yes          | No                    | No                     |              35 |           24 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+------------------------+----------------------------+------------------+----------------+--------------+
+|         Clock Signal        |      Enable Signal     |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_wiz_0_inst/U0/clk_out1 |                        | vga_driver/hsync0          |                1 |              1 |         1.00 |
+|  vga_driver/VGA_vsync_OBUF  |                        |                            |                2 |              2 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1 | vga_driver/eqOp        |                            |                2 |              2 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1 | vga_driver/eqOp        | vga_driver/v_cnt0          |                2 |              9 |         4.50 |
+|  vga_driver/VGA_vsync_OBUF  |                        | add_sl/laser_y[10]_i_1_n_0 |                8 |             11 |         1.38 |
+|  vga_driver/VGA_vsync_OBUF  | add_sl/laser_shot      |                            |                4 |             11 |         2.75 |
+|  clk_wiz_0_inst/U0/clk_out1 |                        | vga_driver/clear           |                4 |             11 |         2.75 |
+|  clk_in_IBUF_BUFG           | shippos[10]_i_1_n_0    |                            |               10 |             11 |         1.10 |
+|  clk_in_IBUF_BUFG           | ship_y_pos[10]_i_1_n_0 |                            |                8 |             11 |         1.38 |
+|  clk_in_IBUF_BUFG           |                        |                            |                6 |             21 |         3.50 |
+|  clk_wiz_0_inst/U0/clk_out1 |                        |                            |               13 |             27 |         2.08 |
++-----------------------------+------------------------+----------------------------+------------------+----------------+--------------+
+
+

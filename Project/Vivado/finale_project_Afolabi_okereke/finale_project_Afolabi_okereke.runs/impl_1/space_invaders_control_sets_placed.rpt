@@ -1,0 +1,120 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 24 18:15:30 2025
+| Host         : DarthViktor running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file space_invaders_control_sets_placed.rpt
+| Design       : space_invaders
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    42 |
+|    Minimum number of control sets                        |    42 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   232 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    42 |
+| >= 0 to < 4        |    25 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             131 |           75 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              23 |           11 |
+| Yes          | No                    | No                     |              45 |           29 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             161 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+--------------+
+|             Clock Signal            |            Enable Signal            |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+--------------+
+|  add_sl/p_0_in2276_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2288_in               |                                     |                             |                1 |              1 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1         |                                     | vga_driver/hsync0           |                1 |              1 |         1.00 |
+|  clk_wiz_0_inst/U0/clk_out1         | vga_driver/eqOp                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2304_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2284_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2306_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2312_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2296_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2280_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2300_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2314_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2328_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2332_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2336_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2324_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2292_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2340_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2344_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/alien_on_screen_reg_n_0_[1] |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/alien_on_screen_reg_n_0_[0] |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2320_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2302_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2308_in               |                                     |                             |                1 |              1 |         1.00 |
+|  add_sl/p_0_in2310_in               |                                     |                             |                1 |              1 |         1.00 |
+|  VGA_vsync_OBUF_BUFG                |                                     | add_sl/game_on__0           |                1 |              4 |         4.00 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/movespeed                    | add_sl/movespeed[5]_i_1_n_0 |                1 |              4 |         4.00 |
+|  VGA_vsync_OBUF_BUFG                |                                     | add_sl/laser_y1             |                4 |              7 |         1.75 |
+|  clk_wiz_0_inst/U0/clk_out1         | vga_driver/eqOp                     | vga_driver/v_cnt0           |                4 |             10 |         2.50 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/laser_shot                   |                             |                5 |             11 |         2.20 |
+|  clk_wiz_0_inst/U0/clk_out1         |                                     | vga_driver/clear            |                5 |             11 |         2.20 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/alien_laser_x[10]_i_1_n_0    |                             |                9 |             11 |         1.22 |
+|  clk_in_IBUF_BUFG                   | shippos[10]_i_1_n_0                 |                             |                8 |             11 |         1.38 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/alien_laser_y[10]_i_1_n_0    |                             |                6 |             11 |         1.83 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/score_num[4]_i_2_n_0         | add_sl/score_num            |                3 |             12 |         4.00 |
+|  clk_in_IBUF_BUFG                   |                                     |                             |                6 |             21 |         3.50 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/dir21_out                    | add_sl/game_on__0           |                8 |             32 |         4.00 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/lives[0]_i_2_n_0             | add_sl/lives[0]_i_1_n_0     |                8 |             32 |         4.00 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/alien0_x0                    | add_sl/game_on__0           |                8 |             32 |         4.00 |
+|  VGA_vsync_OBUF_BUFG                |                                     |                             |               25 |             38 |         1.52 |
+|  VGA_vsync_OBUF_BUFG                | add_sl/enemy_laser_inbound12400_out | add_sl/laser_start          |               11 |             39 |         3.55 |
+|  clk_wiz_0_inst/U0/clk_out1         |                                     |                             |               21 |             49 |         2.33 |
++-------------------------------------+-------------------------------------+-----------------------------+------------------+----------------+--------------+
+
+

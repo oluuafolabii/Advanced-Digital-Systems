@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Feb  7 21:18:32 2025
+# Process ID         : 23596
+# Current directory  : C:/Digital Systems/labs/labs1/Vivado/lab1_even_detector/lab1_even_detector.runs/impl_1
+# Command line       : vivado.exe -log even_detector.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source even_detector.tcl -notrace
+# Log file           : C:/Digital Systems/labs/labs1/Vivado/lab1_even_detector/lab1_even_detector.runs/impl_1/even_detector.vdi
+# Journal file       : C:/Digital Systems/labs/labs1/Vivado/lab1_even_detector/lab1_even_detector.runs/impl_1\vivado.jou
+# Running On         : DarthViktor
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16917 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 40540 MB
+# Available Virtual  : 16057 MB
+#-----------------------------------------------------------
+source even_detector.tcl -notrace

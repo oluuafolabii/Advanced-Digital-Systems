@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital Systems/labs/lab2/VHDL/even_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'even_detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Digital Systems/labs/lab2/VHDL/tb_even_detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'even_detector_testbench'

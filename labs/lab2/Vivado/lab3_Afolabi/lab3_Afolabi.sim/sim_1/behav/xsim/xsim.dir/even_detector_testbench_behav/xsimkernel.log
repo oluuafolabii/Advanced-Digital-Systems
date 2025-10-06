@@ -1,0 +1,7 @@
+Running: xsim.dir/even_detector_testbench_behav/xsimk.exe -simmode gui -wdb even_detector_testbench_behav.wdb -simrunnum 0 -socket 51358
+Design successfully loaded
+Design Loading Memory Usage: 29300 KB (Peak: 29300 KB)
+Design Loading CPU Usage: 671 ms
+Simulation completed
+Simulation Memory Usage: 37844 KB (Peak: 37844 KB)
+Simulation CPU Usage: 284718 ms

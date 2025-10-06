@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../VHDL/even_detector.vhd" \
+"../../../../../../VHDL/tb_even_detector.vhd" \
+
+# Do not sort compile order
+nosort

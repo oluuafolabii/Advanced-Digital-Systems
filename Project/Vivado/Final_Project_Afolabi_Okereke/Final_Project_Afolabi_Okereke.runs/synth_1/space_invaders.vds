@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 24 17:48:41 2025
+# Process ID         : 50880
+# Current directory  : C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.runs/synth_1
+# Command line       : vivado.exe -log space_invaders.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source space_invaders.tcl
+# Log file           : C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.runs/synth_1/space_invaders.vds
+# Journal file       : C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.runs/synth_1\vivado.jou
+# Running On         : DarthViktor
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16917 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30876 MB
+# Available Virtual  : 7558 MB
+#-----------------------------------------------------------
+source space_invaders.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.srcs/utils_1/imports/synth_1/space_invaders.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.srcs/utils_1/imports/synth_1/space_invaders.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top space_invaders -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 75528
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.852 ; gain = 469.504
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'red_in' is neither a static name nor a globally static expression [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:127]
+WARNING: [Synth 8-9112] actual for formal port 'green_in' is neither a static name nor a globally static expression [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:128]
+WARNING: [Synth 8-9112] actual for formal port 'blue_in' is neither a static name nor a globally static expression [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'space_invaders' [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:24]
+INFO: [Synth 8-3491] module 'ship_n_laser' declared at 'C:/Digital Systems/Project/Vivado/New folder/ship_n_laser.vhd:7' bound to instance 'add_sl' of component 'ship_n_laser' [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'ship_n_laser' [C:/Digital Systems/Project/Vivado/New folder/ship_n_laser.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'ship_n_laser' (0#1) [C:/Digital Systems/Project/Vivado/New folder/ship_n_laser.vhd:24]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/Digital Systems/Project/Vivado/New folder/vga_sync.vhd:5' bound to instance 'vga_driver' of component 'vga_sync' [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Digital Systems/Project/Vivado/New folder/vga_sync.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (0#1) [C:/Digital Systems/Project/Vivado/New folder/vga_sync.vhd:21]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0.vhd:11' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0.vhd:20]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:63' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:72]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 25.250000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:114]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:176]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:183]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0_clk_wiz.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (0#1) [C:/Digital Systems/Project/Vivado/New folder/clk_wiz_0.vhd:20]
+INFO: [Synth 8-3491] module 'leddec16' declared at 'C:/Digital Systems/Project/Vivado/New folder/leddec16.vhd:4' bound to instance 'led1' of component 'leddec16' [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'leddec16' [C:/Digital Systems/Project/Vivado/New folder/leddec16.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'leddec16' (0#1) [C:/Digital Systems/Project/Vivado/New folder/leddec16.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'space_invaders' (0#1) [C:/Digital Systems/Project/Vivado/New folder/space_invaders.vhd:24]
+WARNING: [Synth 8-7129] Port quit in module ship_n_laser is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.250 ; gain = 575.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.250 ; gain = 575.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.250 ; gain = 575.902
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1136.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Digital Systems/Project/Vivado/New folder/space_invaders.xdc]
+Finished Parsing XDC File [C:/Digital Systems/Project/Vivado/New folder/space_invaders.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Digital Systems/Project/Vivado/New folder/space_invaders.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/space_invaders_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/space_invaders_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1226.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1226.621 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.621 ; gain = 666.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.621 ; gain = 666.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.621 ; gain = 666.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.621 ; gain = 666.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 14    
+	   4 Input   11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 8     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design space_invaders has port SEG7_anode[7] driven by constant 1
+WARNING: [Synth 8-3917] design space_invaders has port SEG7_anode[6] driven by constant 1
+WARNING: [Synth 8-3917] design space_invaders has port SEG7_anode[5] driven by constant 1
+WARNING: [Synth 8-3917] design space_invaders has port SEG7_anode[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1226.621 ; gain = 666.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.715 ; gain = 774.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1382.414 ; gain = 822.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1388.805 ; gain = 828.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    44|
+|3     |LUT1       |     6|
+|4     |LUT2       |    36|
+|5     |LUT3       |    28|
+|6     |LUT4       |    71|
+|7     |LUT5       |    93|
+|8     |LUT6       |   123|
+|9     |MMCME2_ADV |     1|
+|10    |FDRE       |   115|
+|11    |IBUF       |     6|
+|12    |OBUF       |    29|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1572.891 ; gain = 922.172
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1572.891 ; gain = 1012.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1572.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f1080e5e
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1579.887 ; gain = 1224.754
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1579.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Digital Systems/Project/Vivado/Final_Project_Afolabi_Okereke/Final_Project_Afolabi_Okereke.runs/synth_1/space_invaders.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file space_invaders_utilization_synth.rpt -pb space_invaders_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 24 17:49:23 2025...
